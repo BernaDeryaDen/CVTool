@@ -1,12 +1,11 @@
 .body {
   font-family: "Times New Roman", Times, serif;
-
-  box-sizing: content-box;
 }
 .container {
   margin: 0px 5px 5px 0px;
   display: flex;
   flex-direction: row;
+  height: 1500px;
 }
 .cvTitle {
   box-sizing: content-box;
@@ -24,7 +23,6 @@
   border: 2px solid black;
   margin-top: 0px;
   width: 500px;
-  height: 1200px;
   background-color: rgb(167, 166, 166);
   padding-left: 10px;
 }
@@ -32,7 +30,7 @@
   border: 2px solid black;
   margin-top: 0px;
   width: 400px;
-  height: 1200px;
+
   background-color: rgb(201, 199, 199);
   padding-left: 10px;
 }
@@ -41,7 +39,7 @@
   border: 3px solid black;
   margin-top: 0px;
   width: 1100px;
-  height: 1200px;
+
   background-color: rgb(231, 35, 35);
   padding-left: 10px;
   display: flex;
@@ -100,7 +98,7 @@ li {
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 1200px;
+
   background-color: rgb(156, 15, 15);
   padding-left: 10px;
   margin-left: 10px;
@@ -151,7 +149,6 @@ li {
   display: flex;
   flex-direction: column;
   width: 900px;
-  height: 1200px;
 }
 .topSide {
   display: flex;
@@ -180,7 +177,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: right;
-  height: 950px;
+
   padding-left: 10px;
   padding-right: 50px;
   margin-left: 10px;

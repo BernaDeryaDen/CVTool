@@ -1,10 +1,10 @@
 function nameFunction() {
-  document.getElementById("cvNameTitle").innerHTML = document
+  document.getElementById("cvNameColor").innerHTML = document
     .getElementById("nameBoxNameInput")
     .value.toUpperCase();
 }
 function jobFunction() {
-  document.getElementById("cvJobTitle").innerHTML = document
+  document.getElementById("cvJobColor").innerHTML = document
     .getElementById("nameBoxJobInput")
     .value.toUpperCase();
 }
