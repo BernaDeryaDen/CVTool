@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <span class="cvTitle">CV Hazırlama Aracı</span>
+    <div class="container">
+      <div class="cvTool-1">
+        <div id="box1">
+          <h2 class="titleContent">Metin İçerikleri</h2>
+          <hr class="lineTitle" id="cvHr" />
+          <div for="nameBox" class="boxTitle-1">
+            <h4 class="nameTitle">İsim Kutusu</h4>
+            <label class="nameBoxText">Ad Soyad:</label>
+            <input
+              type="text"
+              class="nameBoxNameInput"
+              id="nameBoxNameInput"
+              onkeyup="nameFunction()"
+            />
+            <br />
+            <label class="nameBoxText">Unvan:</label>
+            <input
+              type="text"
+              class="nameBoxJobInput"
+              id="nameBoxJobInput"
+              onkeyup="jobFunction()"
+            />
+          </div>
+          <div for="contactBox" class="boxTitle-1">
+            <h4 class="contactTitle">İletişim Bilgileri</h4>
+            <label class="contactBoxText">Telefon:</label>
+            <input
+              type="tel"
+              class="contactBoxPhoneInput"
+              id="contactBoxPhoneInput"
+              onkeyup="phoneFunction()"
+            />
+            <br />
+            <label class="contactBoxText">Mail:</label>
+            <input
+              type="email"
+              class="contactBoxEmailInput"
+              id="contactBoxEmailInput"
+              onkeyup="emailFunction()"
+            />
+            <br />
+            <label class="contactBoxText">Web:</label>
+            <input
+              type="email"
+              class="contactBoxWebInput"
+              id="contactBoxWebInput"
+              onkeyup="webFunction()"
+            />
+            <br />
+            <label class="contactBoxText">Adres:</label>
+            <textarea
+              class="contactBoxAdressInput"
+              id="contactBoxAdressInput"
+              cols="25"
+              rows="7"
+              style="resize: vertical"
+              onkeyup="adressFunction()"
+            ></textarea>
+          </div>
+          <div for="educationBox" class="boxTitle-1">
+            <h4 class="educationTitle">Eğitim Bilgileri</h4>
+            <label class="educationBoxText">Açıklama:</label>
+            <textarea
+              name="educationBoxTextInput"
+              class="educationBoxTextInput"
+              id="educationBoxTextInput"
+              cols="25"
+              rows="7"
+              style="resize: vertical"
+              onkeyup="educationExpFunction()"
+            ></textarea>
+            <br />
+            <div class="selectBox">
+              <label class="educationBoxText">Okul Sayısı:</label>
+              <select
+                name="educationBoxSelect"
+                id="educationBoxSelect"
+                class="educationBoxSelect"
+                onchange="schoolFunction(); this.onchange=null;"
+              >
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br />
+              <span class="selectSelectBox" id="selectBoxSelect"></span>
+            </div>
+          </div>
+          <div for="skillBox" class="boxTitle-1">
+            <h4 class="skillTitle">Yetenekler</h4>
+            <label class="skillBoxText">Açıklama:</label>
+            <textarea
+              class="skillBoxTextInput"
+              id="skillBoxTextInput"
+              cols="25"
+              rows="7"
+              style="resize: vertical"
+              onkeyup="skillExpFunction()"
+            ></textarea>
+            <br />
+            <div class="selectBox">
+              <label class="skillBoxText">Yetenek Sayısı:</label>
+              <select
+                id="skillBoxSelect"
+                class="skillBoxSelect"
+                onchange="skillFunction(); this.onchange=null;"
+              >
+                <option value="" disabled selected>Seçiniz</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br />
+              <span class="skillSelect" id="selectSkillBoxSelect"></span>
+            </div>
+          </div>
+          <div for="aboutBox" class="boxTitle-1">
+            <h4 class="aboutTitle">Hakkımda</h4>
+            <label class="aboutBoxText">Açıklama:</label>
+            <textarea
+              class="aboutBoxTextInput"
+              id="aboutBoxTextInput"
+              cols="25"
+              rows="7"
+              style="resize: vertical"
+              onkeyup="aboutExpFunction()"
+            ></textarea>
+          </div>
+          <div for="workExpBox" class="boxTitle-1">
+            <h4 class="workExpTitle">İş Deneyimi</h4>
+            <label class="workExpBoxText">Açıklama:</label>
+            <textarea
+              class="workExpBoxTextInput"
+              id="workExpBoxTextInput"
+              cols="25"
+              rows="7"
+              style="resize: vertical"
+              onkeyup="workExpFunction()"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="cvTool-2">
+        <div id="box2">
+          <h2 class="titleContent">Görünüş</h2>
+          <hr class="lineTitle" id="cvHr-0" />
+          <div for="colorBox" class="boxTitle-2">
+            <h4 class="colorTitle">Renkler</h4>
+            <label class="backColorBoxText">Arkaplan Rengi:</label>
+            <input
+              type="color"
+              class="backColorBoxInput"
+              id="backColorBoxInput"
+              onchange="backColorFunction()"
+            />
+            <br />
+            <label class="leftSideColorBoxText">Sol Kolon Rengi:</label>
+            <input
+              type="color"
+              class="leftSideColorBoxInput"
+              id="leftSideColorBoxInput"
+              onchange="leftSideColorFunction()"
+            />
+            <br />
+            <label class="nameColorBoxText">İsim Kutusu Rengi:</label>
+            <input
+              type="color"
+              class="nameColorBoxInput"
+              id="nameColorBoxInput"
+              onchange="nameColorFunction()"
+            />
+            <br />
+            <label class="nameColorText">İsim Kutusu Yazı Rengi:</label>
+            <input
+              type="color"
+              class="nameColorInput"
+              id="nameColorInput"
+              onchange="nameTextColorFunction()"
+            />
+          </div>
+          <div for="fontBox" class="boxTitle-2">
+            <h4 class="fontTitle">Yazı Tipi</h4>
+            <label class="backColorBoxText">Yazı Tipi:</label>
+            <select
+              name="fontBoxSelect"
+              id="fontBoxSelect"
+              class="fontBoxSelect"
+              onchange="fontFunction()"
+            >
+              <option value="" disabled selected>Seçiniz</option>
+              <option value="1">Times New Roman</option>
+              <option value="2">Arial</option>
+              <option value="3">Courier New</option>
+              <option value="4">Georgia</option>
+              <option value="5">Verdana</option>
+              <option value="6">Gill Sans</option>
+              <option value="7">Segoe UI</option>
+              <option value="8">Lucida Sans</option>
+              <option value="9">Impact</option>
+              <option value="10">Franklin Gothic Medium</option>
+            </select>
+          </div>
+          <div for="photoBox" class="boxTitle-2">
+            <h4 class="photoTitle">Fotoğraf</h4>
+            <label class="photoBoxText">Fotoğraf Çerçevesi Şekli:</label>
+            <select
+              id="photoBoxSelect"
+              class="photoBoxSelect"
+              onchange="photoBoxChangeFunction()"
+            >
+              <option value="" disabled selected>Seçiniz</option>
+              <option value="1">Yuvarlak</option>
+              <option value="2">Kare</option>
+              <option value="3">Oval</option>
+            </select>
+          </div>
+          <div for="titleLineBox" class="boxTitle-2">
+            <h4 class="titleLineTitle">Başlık Altı Çizgileri</h4>
+            <label class="titleLineBoxText">Çizgi Rengi:</label>
+            <input
+              type="color"
+              class="titleLineBoxInput"
+              id="titleLineBoxInput"
+              onchange="lineColorFunction()"
+            />
+            <br />
+            <label class="backColorBoxText">Çizgi Tipi:</label>
+            <select
+              id="underlineTypeSelect"
+              class="fontBoxSelect"
+              onchange="underlineTypeChangeFunction()"
+            >
+              <option value="" disabled selected>Seçiniz</option>
+              <option value="1">Solid</option>
+              <option value="2">Dashed</option>
+              <option value="3">Dotted</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="cvTool-3" id="cvTool-3">
+        <div class="leftsideColumn" id="leftsideColumn">
+          <div class="image" id="image-1">
+            <img id="image" alt="Fotoğraf" src="" />
+          </div>
+          <div class="cv">
+            <div class="contact">
+              <label for="cvContact" class="cvContactTitle">İLETİŞİM</label>
+              <hr class="cvHr" id="cvHr-1" />
+              <span class="cvContactInput" id="cvContactInput"
+                ><ul class="cvContactInputList">
+                  <li id="phoneOutput">{Telefon}</li>
+                  <li id="mailOutput">{Mail}</li>
+                  <li id="adressOutput">{Adres}</li>
+                  <li id="webOutput">{Web}</li>
+                </ul></span
+              >
+            </div>
+            <div class="education">
+              <label for="cvEducation" class="cvEducationTitle">EĞİTİM</label>
+              <hr class="cvHr" id="cvHr-2" />
+              <span class="cvEducationInput" id="cvEducationInput"
+                >{AÇIKLAMA}</span
+              >
+              <br />
+              <span class="cvSchoolListInput" id="cvSchoolListInput"
+                ><ul></ul
+              ></span>
+            </div>
+
+            <div class="skill">
+              <label for="cvSkill" class="cvSkillTitle">YETENEKLER</label>
+              <hr class="cvHr" id="cvHr-3" />
+              <span class="cvSkillInput" id="cvSkillInput">{AÇIKLAMA}</span>
+              <br />
+              <span class="cvSkillListInput" id="cvSkillListInput"
+                ><ul></ul
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="rightsideColumn">
+          <div class="topSide" id="topSide">
+            <span class="cvNameTitle" id="cvNameColor">{AD SOYAD}</span>
+            <hr class="nameHr" id="cvHrColor" />
+            <span class="cvJobTitle" id="cvJobColor">{UNVAN}</span>
+          </div>
+          <div class="bottomSide">
+            <div class="about">
+              <label for="cvAbout" class="cvEducationTitle">HAKKIMDA</label>
+              <hr class="cvHr" id="cvHr-4" />
+              <span class="cvAboutInput" id="cvAboutInput">{AÇIKLAMA}</span>
+            </div>
+            <div class="experience">
+              <label for="cvExperience" class="cvExperienceTitle"
+                >İŞ DENEYİMİ</label
+              >
+              <hr class="cvHr" id="cvHr-5" />
+              <span class="cvExperienceInput" id="cvExperienceInput"
+                >{AÇIKLAMA}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
