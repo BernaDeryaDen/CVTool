@@ -1,0 +1,208 @@
+.body {
+  font-family: "Times New Roman", Times, serif;
+
+  box-sizing: content-box;
+}
+.container {
+  margin: 0px 5px 5px 0px;
+  display: flex;
+  flex-direction: row;
+}
+.cvTitle {
+  box-sizing: content-box;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  border: 2px solid black;
+  padding: 20px;
+  width: 2000px;
+}
+.cvTool-1 {
+  border: 2px solid black;
+  margin-top: 0px;
+  width: 500px;
+  height: 1200px;
+  background-color: rgb(167, 166, 166);
+  padding-left: 10px;
+}
+.cvTool-2 {
+  border: 2px solid black;
+  margin-top: 0px;
+  width: 400px;
+  height: 1200px;
+  background-color: rgb(201, 199, 199);
+  padding-left: 10px;
+}
+.cvTool-3 {
+  font-family: "Courier New", Courier, monospace;
+  border: 3px solid black;
+  margin-top: 0px;
+  width: 1100px;
+  height: 1200px;
+  background-color: rgb(231, 35, 35);
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.titleContent {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+.boxTitle-2 h4 {
+  margin-bottom: 1px;
+}
+.boxTitle-2 label {
+  display: inline-block;
+  width: 170px;
+}
+
+input {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+ul,
+li {
+  margin: 0;
+}
+.nameTitle,
+.contactTitle,
+.educationTitle,
+.experienceTitle,
+.skillTitle,
+.aboutTitle,
+.workExpTitle,
+.colorTitle,
+.fontTitle,
+.photoTitle,
+.titleLineTitle {
+  text-decoration: underline;
+}
+.box1 {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.leftsideColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 1200px;
+  background-color: rgb(156, 15, 15);
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.leftsideColumn label {
+  display: inline-block;
+  font-size: x-large;
+}
+.cvHr {
+  border: 1px solid black;
+  margin: 10px 10px 10px 0px;
+  border-style: inset;
+}
+.image {
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 1300px;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+.rightsideColumn {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 1200px;
+}
+.topSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: rgb(77, 77, 77);
+}
+.cvNameTitle {
+  font-size: 60px;
+  margin-top: 0px;
+  color: azure;
+}
+.cvJobTitle {
+  font-size: 40px;
+  margin-top: 0px;
+  color: azure;
+}
+.nameHr {
+  border: 1px ridge azure;
+  margin-top: 1px;
+  width: 100px;
+}
+.bottomSide {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  height: 950px;
+  padding-left: 10px;
+  padding-right: 50px;
+  margin-left: 10px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.cvEducationTitle {
+  display: inline-block;
+  font-size: x-large;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 350px;
+}
+.cvExperienceTitle {
+  display: inline-block;
+  font-size: x-large;
+  width: fit-content;
+}
